@@ -1,10 +1,14 @@
-export const metadata = {
-    title: "About Page"
-}
+import { ReactNode } from "react";
 
-export default function AboutLayout({children}) {
-    return <>
-    <h1>About Layout</h1>
-    {children}
+export const metadata = {
+  title: "About Page",
+};
+
+export default function AboutLayout({ children }: { children: ReactNode }) {
+  return (
+    <>
+      <h1>About Layout</h1>
+      {children}
     </>
+  );
 }
